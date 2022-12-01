@@ -527,6 +527,22 @@ footer#contact h3,p {
         border-radius: 5px 5px 0px 0px;
         height: 200px;
     }
+    
+    @media screen and (max-width: 780px) {
+
+        html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+    }
 
 /*!=============================   OPTIONAL (Responsif utk Support Section ) ================*/
 
