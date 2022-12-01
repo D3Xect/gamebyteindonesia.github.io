@@ -104,6 +104,8 @@ nav.gamebyte .button-menu .garis {
 
 
 /**================================= CONFIG HEADER ==============================*/
+
+
 header {
     position: relative;
     height: 100vh;
@@ -364,19 +366,6 @@ section.quote .layar-dalam p {
     font-weight: bold;
 }
 
-section#contact {
-    background-color: #d7d7d7;
-}
-
-section#contact h3,p {
-    text-align: center;
-}
-
-section#contact p {
-    text-align: center;
-    color: #ababab;
-    font-size: 18px;
-}
 
 .team img {
     width: 100%;
@@ -431,7 +420,19 @@ section#contact p {
     color: #ccc;
 }
 
+section#contact {
+    background-color: #d7d7d7;
+}
 
+section#contact h3,p {
+    text-align: center;
+}
+
+section#contact p {
+    text-align: center;
+    color: #ababab;
+    font-size: 18px;
+}
 
 /**=====================================================  SECTION ABOUT US  ===========================*/
 
@@ -485,7 +486,7 @@ footer#contact h3,p {
 
 /**=============================================  CONFIG MEDIA & SCREEN  ======================*/
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1080px) {
     .layar-dalam {
         width: 90%;
     }
@@ -527,7 +528,7 @@ footer#contact h3,p {
         border-radius: 5px 5px 0px 0px;
         height: 200px;
     }
-    
+
     @media screen and (max-width: 780px) {
 
         html {
