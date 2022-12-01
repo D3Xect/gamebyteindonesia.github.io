@@ -176,6 +176,17 @@ header .overlay {
     opacity: 75%;
 }
 
+header  video {
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
 .button-menu {
     position: absolute;
     top: 1.7rem;
