@@ -747,7 +747,7 @@ footer#contact h3,p {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 300px) {
 
     nav .logo img {
         width: 80px;
@@ -758,19 +758,19 @@ footer#contact h3,p {
 
     .waviy {
         /* margin-bottom: 100px; */
-        height: 85px;
+        height: 110px;
     }
     .waviy span {
-        font-size: 27.5px;
+        font-size: 41.5px;
     }
 
     .full-screen .intro a {
-        font-size: 8.5px;
+        font-size: 10px;
     }
 
     .button {
         flex: auto;
-        margin: 0px;
+        margin: 2.5px;
         padding: 0px 0px 0px 0px;
     }
 
@@ -899,7 +899,7 @@ footer#contact h3,p {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
 
     nav .logo img {
         width: 80px;
