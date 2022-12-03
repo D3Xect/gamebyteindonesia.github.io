@@ -32,11 +32,13 @@ nav {
     color: #fff;
     text-align: center;
     position: fixed;
-    /*border-bottom: 1px solid #b1b1b1;*/
+    /* border-bottom: 1px solid #b1b1b1; */
     line-height: 60px;
     width: 100%;
     transition: background-color 1.5s ease;
+    height: 50px;
 }
+
 nav.gamebyte {
     background-color: #fff;
 }
@@ -53,11 +55,12 @@ nav .logo {
     text-align: center;
     margin: 0px 0px 0px 10px;
 }
+
 nav .logo img {
-    width: 120px;
+    width: 100px;
     vertical-align: top;
     float: left;
-    margin: 10px 10px 21px 10px;
+    margin: 5px 10px 21px 5px;
 }
 
 nav .logo img.gamebyteblack {
@@ -80,7 +83,7 @@ nav .menu ul {
 nav .menu ul li {
     list-style-type: none;
     float: left;
-    line-height: 70px;
+    line-height: 56px;
 }
 
 nav ul li a {
@@ -102,6 +105,9 @@ nav.gamebyte .button-menu .garis {
     background-color: #333;
 }
 
+/* nav.gamebyte .button-menu .bx {
+    background-color: #333;
+} */
 
 /**================================= CONFIG HEADER ==============================*/
 
@@ -169,7 +175,7 @@ header .intro h3 {
 .button:hover {
     transition: all 0.2s ease-in-out;
     transform: scale(1.05);
-    color: #ff0000;
+    color: #ffffff;
 }
 
 .button:active {
@@ -216,6 +222,11 @@ header  video {
     height: 3px;
     background-color: #fff;
 }
+
+/* .button-menu .bx {
+    height: 3px;
+    background-color: #fff;
+} */
 
 /**=====================================================  SECTION ================================*/
 
@@ -264,6 +275,7 @@ section.gray {
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i))
   }
+
   @keyframes flip {
     0%,80% {
       transform: rotateY(360deg) 
@@ -560,1090 +572,10 @@ footer#contact h3,p {
         color: #333;
     }
 
-    .button-menu {
-        display: flex;
-    }
-
-    .blog .area {
-        display: block;
-
-    }
-
-    .blog div.area div {
-        width: 100%;
-    }
-
-    .blog .area .gambar {
-        border-radius: 5px 5px 0px 0px;
-        height: 200px;
-    }
-
-    @media screen and (max-width: 780px) {
-
-        html {
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
-
-        body {
-            margin: 0px;
-            padding: 0px;
-            overflow-x: hidden;
-        }
-    }
-
-    /* Extra small devices (phones, 600px and down) */
-
-@media only screen and (max-width: 300px) {
-
-    nav .logo img {
-        width: 80px;
-        vertical-align: top;
-        float: left;
-        margin: 17px 10px 21px 0px;
-    }
-
     .waviy {
-        /* margin-bottom: 100px; */
-        height: 82.5px;
-    }
-    .waviy span {
-        font-size: 27.5px;
-    }
-
-    .full-screen .intro a {
-        font-size: 8.5px;
-    }
-
-    .button {
-        flex: auto;
-        margin: 0px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .intro h4 {
-        font-size: 10.75px;
-    }
-
-    .intro a {
-        font-size: 10px;
-        padding: 0px 5px 0px 5px;
-    }
-
-    section#aboutus {
-        width: 100%;
-    }
-
-    .support {
-        display: block;
-    }
-
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    section#aboutus p.ringkasan {
-        font-size: 16px;
-    }
-
-    section#aboutus .konten-isi p {
-        font-size: 12px;
-        text-align: justify;
-    }
-
-
-    section.quote .layar-dalam p {
-        display: inline;
-        background: url("Materials/Images/quotation.png") no-repeat;
-        /* background-position: left; */
-        background-size: 10px;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    section#team .layar-dalam h3 {
-        font-size: 23px;
-    }
-
-    section#team .layar-dalam p {
-        font-size: 16px;
-    }
-
-    .team {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* align-items: flex-end; */
-        display: block;
-        align-items: center;
-    }
-
-    .team h6 {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .team span, p {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    .team img {
-        margin-top: 15px;
-        width: 50%;
-        box-shadow: 0px -10px 30px #ccc;
-        border-radius: 5px;
-    }
-
-    .team div {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    #blog .layar-dalam p {
-        font-size: 12px;
-    }
-
-    .blog {
-        display: block;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .blog .area {
-        width: 100%;
-    }
-
-    #contact .copyright {
-        font-size: 15px;
-    }
-
-    #contact .layar-dalam p {
-        font-size: 14px;
-    }
-
-    footer .layar-dalam .copyright {
-        width: 100%;
-        margin-top: 85px;
-        padding-top: 25px;
-        border-top: 1px solid #666;
-        text-align: center;
-        font-size: 25px;
-        color: black;
-    }
-
-}
-
-
-@media only screen and (min-width: 300px) {
-
-    nav .logo img {
-        width: 80px;
-        vertical-align: top;
-        float: left;
-        margin: 17px 10px 21px 0px;
-    }
-
-    .waviy {
-        /* margin-bottom: 100px; */
-        height: 95px;
-    }
-    .waviy span {
-        font-size: 41.5px;
-    }
-
-    .full-screen .intro a {
-        font-size: 10px;
-    }
-
-    .button {
-        flex: auto;
-        margin: 2.5px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .intro h4 {
-        font-size: 13px;
-    }
-
-    .intro a {
-        font-size: 10px;
-        padding: 0px 5px 0px 5px;
-    }
-
-    section#aboutus {
-        width: 100%;
-    }
-
-    .support {
-        display: block;
-    }
-
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    section#aboutus p.ringkasan {
-        font-size: 16px;
-    }
-
-    section#aboutus .konten-isi p {
-        font-size: 12px;
-        text-align: justify;
-    }
-
-
-    section.quote .layar-dalam p {
-        display: inline;
-        background: url("Materials/Images/quotation.png") no-repeat;
-        /* background-position: left; */
-        background-size: 10px;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    section#team .layar-dalam h3 {
-        font-size: 23px;
-    }
-
-    section#team .layar-dalam p {
-        font-size: 16px;
-    }
-
-    .team {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* align-items: flex-end; */
-        display: block;
-        align-items: center;
-    }
-
-    .team h6 {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .team span, p {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    .team img {
-        margin-top: 15px;
-        width: 50%;
-        box-shadow: 0px -10px 30px #ccc;
-        border-radius: 5px;
-    }
-
-    .team div {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    #blog .layar-dalam p {
-        font-size: 12px;
-    }
-
-    .blog {
-        display: block;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .blog .area {
-        width: 100%;
-    }
-
-    #contact .copyright {
-        font-size: 15px;
-    }
-
-    #contact .layar-dalam p {
-        font-size: 14px;
-    }
-
-    footer .layar-dalam .copyright {
-        width: 100%;
-        margin-top: 85px;
-        padding-top: 25px;
-        border-top: 1px solid #666;
-        text-align: center;
-        font-size: 25px;
-        color: black;
-    }
-
-}
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    nav .logo img {
-        width: 80px;
-        vertical-align: top;
-        float: left;
-        margin: 17px 10px 21px 0px;
-    }
-
-    .waviy {
-        /* margin-bottom: 100px; */
-        height: 85px;
-    }
-    .waviy span {
-        font-size: 27.5px;
-    }
-
-    .full-screen .intro a {
-        font-size: 8.5px;
-    }
-
-    .button {
-        flex: auto;
-        margin: 0px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .intro h4 {
-        font-size: 12px;
-    }
-
-    .intro a {
-        font-size: 10px;
-        padding: 0px 5px 0px 5px;
-    }
-
-    section#aboutus {
-        width: 100%;
-    }
-
-    .support {
-        display: block;
-    }
-
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    section#aboutus p.ringkasan {
-        font-size: 16px;
-    }
-
-    section#aboutus .konten-isi p {
-        font-size: 12px;
-        text-align: justify;
-    }
-
-
-    section.quote .layar-dalam p {
-        display: inline;
-        background: url("Materials/Images/quotation.png") no-repeat;
-        /* background-position: left; */
-        background-size: 10px;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    section#team .layar-dalam h3 {
-        font-size: 23px;
-    }
-
-    section#team .layar-dalam p {
-        font-size: 16px;
-    }
-
-    .team {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* align-items: flex-end; */
-        display: block;
-        align-items: center;
-    }
-
-    .team h6 {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .team span, p {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    .team img {
-        margin-top: 15px;
-        width: 50%;
-        box-shadow: 0px -10px 30px #ccc;
-        border-radius: 5px;
-    }
-
-    .team div {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    #blog .layar-dalam p {
-        font-size: 12px;
-    }
-
-    .blog {
-        display: block;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .blog .area {
-        width: 100%;
-    }
-
-    #contact .copyright {
-        font-size: 15px;
-    }
-
-    #contact .layar-dalam p {
-        font-size: 14px;
-    }
-
-    footer .layar-dalam .copyright {
-        width: 100%;
-        margin-top: 85px;
-        padding-top: 25px;
-        border-top: 1px solid #666;
-        text-align: center;
-        font-size: 25px;
-        color: black;
-    }
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-/*!=============================   OPTIONAL (Responsif utk Support Section ) ================*/
-
-/*
-    .support {
-        display: block;
-    }
-
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-    */
-
-/*!===========================================================================*/
-
-/*!=================================        BREAKPOINT (RESPONSIVE CONFIGS)   =================*/
-
-
-}
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 20px;
-    font-size: 15px;
-}
-html {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-.full-screen {
-    width: 100%;
-}
-
-.layar-dalam {
-    width: 1000px;
-    margin: auto;
-}
-
-/**====================================   CONFIG NAVBAR  =====================*/
-
-nav {
-    z-index: 100;
-    color: #fff;
-    text-align: center;
-    position: fixed;
-    /*border-bottom: 1px solid #b1b1b1;*/
-    line-height: 60px;
-    width: 100%;
-    transition: background-color 1.5s ease;
-}
-nav.gamebyte {
-    background-color: #fff;
-}
-
-nav.gamebyte ul li a {
-    color: #333;
-
-}
-
-nav .logo {
-    float: left;
-    position: relative;
-    line-height: 55px;
-    text-align: center;
-    margin: 0px 0px 0px 10px;
-}
-nav .logo img {
-    width: 120px;
-    vertical-align: top;
-    float: left;
-    margin: 10px 10px 21px 10px;
-}
-
-nav .logo img.gamebyteblack {
-    display: none;
-}
-
-nav .menu {
-    float: right;
-    height: 60px;
-    max-width: 600px;
-}
-
-nav .menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav .menu ul li {
-    list-style-type: none;
-    float: left;
-    line-height: 70px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-align: center;
-    padding: 0px 16px 0px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-nav.gamebyte {
-    background-color: #fff;
-}
-
-nav.gamebyte .button-menu .garis {
-    background-color: #333;
-}
-
-
-/**================================= CONFIG HEADER ==============================*/
-
-
-header {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    z-index: 2;
-}
-
-header video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -2;
-}
-
-header .intro {
-    z-index: 100;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    top: 50%;
-
-}
-
-header .intro h3 {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-    height: 80px;
-
-}
-
-
-
-
-/**===========================================   CONFIG BUTTON   ===========================*/
-
-.button {
-    /* background-color: #004a98; */
-    background-image: linear-gradient(
-        -225deg,
-        #00305c 0%,
-        #007af5 29%,
-        #155390 67%,
-        #0040ff 100%
-      );
-    height: 40px;
-    line-height: 42px;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0px 5px 0px 5px;
-    font-size: 12px;
-    border-radius: 4px;
-    justify-content: space-between;
-    flex: auto;
-    margin: 10px;
-}
-
-.button:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.05);
-    color: #ff0000;
-}
-
-.button:active {
-    background-color: #01a906;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-
-header .overlay {
-    position: absolute;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 75%;
-}
-
-header  video {
-    position: absolute;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.button-menu {
-    position: absolute;
-    top: 1.7rem;
-    right: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-}
-
-.button-menu .garis {
-    height: 3px;
-    background-color: #fff;
-}
-
-/**=====================================================  SECTION ================================*/
-
-section {
-    padding: 50px 0px 50px 0px;
-
-}
-
-section h3 {
-    font-size: 30px;
-}
-
-section h3::after {
-    content: "";
-    border-bottom: 5px solid #c86b85;
-    width: 52px;
-    display: block;
-    margin: 20px auto;
-}
-
-section p.ringkasan {
-    font-style: italic;
-    font-size: 18px;
-    color: #ababab;
-}
-
-section .konten-isi p {
-    font-style: normal;
-}
-
-section.gray {
-    background-color: #f5f6f6;
-}
-
-.waviy {
-    position: relative;
-    height: 110px;
-  }
-
-  .waviy span {
-    position: relative;
-    display: inline-block;
-    font-size: 60px;
-    color: #fff;
-    text-transform: uppercase;
-    animation: flip 2s infinite;
-    animation-delay: calc(.2s * var(--i))
-  }
-  @keyframes flip {
-    0%,80% {
-      transform: rotateY(360deg) 
-    }
-  }
-
-.support,
-.team,
-.blog {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.support h6,
-.team h6 {
-    margin: 0px;
-    margin-top: 10px;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.support img {
-    width: 50px;
-}
-
-.support div,
-.team div {
-    text-align: center;
-    width: 26%;
-}
-
-/* change transition duration to control the speed of fade effect */
-section#gallery .carousel-item {
-    transition: transform 2.6s ease-in-out;
-  }
-
-  /* section#gallery .carousel-item-active img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    align-content: center;
-    object-position: center;
-    transition: transform ease-in-out 0.5s;
-}
-
-.zoom {
-    z-index: 1;
-    transform: scale(1.5);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } */
-
-section#gallery .carousel-item p {
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-/*   text-fill-color: transparent; */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-section#gallery .carousel-fade .active.carousel-item-start {
-    transition: opacity 0s 2.6s;
-  }
-
-section#gallery .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 2.6s;
-  }
-
-
-
-/* section#gallery {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    overflow: hidden;
-    padding: 10px 0px 10px 0px;
-}
-
-section#gallery div #imggallery {
-    width: 50px;
-}
-
-section#gallery div {
-    padding: 5px;
-}
-
-section#gallery div img {
-    height: 100px;
-    border-radius: 5px;
-}
-
-section#gallery div img:hover {
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.1);
-}
-
-section#gallery h3 {
-    margin: 0px;
-    margin-top: 10px;
-    padding: 0px;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
-section.quote {
-    background:url("Materials/Images/genshin-impact-genshin-landscape-hd-wallpaper-preview.jpg") no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    font-size: 10px;
-    font-style: italic;
-    padding: 100px;
-}
-
-section.quote .layar-dalam p {
-    display: inline;
-    background: url("Materials/Images/quotation.png") no-repeat;
-    background-size: 30px;
-    padding: 30px;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-
-.team img {
-    width: 70%;
-    box-shadow: 0px -10px 30px #ccc;
-    border-radius: 5px;
-}
-
-.blog {
-    /* background:url("Materials/Images/white.jpg") no-repeat; */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.blog .area {
-    width: 47%;
-    box-shadow: 0px -10px 30px #ccc;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.blog div.area div {
-    width: 50%;
-}
-
-.blog .area .gambar {
-    border-radius: 5px 0px 0px 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-}
-
-.blog .area .text article {
-    padding: 40px;
-}
-
-.blog .area .text article h4 {
-    margin: 0px;
-}
-
-.blog .area .text article a {
-    color: #333;
-    text-decoration: solid;
-    transition: color 0.5s ease;
-}
-
-.blog .area .text article a:hover {
-    color: #ccc;
-}
-
-section#contact {
-    background-color: #d7d7d7;
-}
-
-section#contact h3,p {
-    text-align: center;
-}
-
-section#contact p {
-    text-align: center;
-    color: #ababab;
-    font-size: 18px;
-}
-
-/**=====================================================  SECTION ABOUT US  ===========================*/
-
-#aboutus,
-#team,
-#blog {
-    text-align: center;
-}
-
-/**========================================================   FOOTER  ===============================*/
-
-footer {
-    /* padding: 0px 0px 50px 0px; */
-    padding: 0px 0px 50px 0px;
-    /* background-color: #343a40; */
-    color: #fff;
-}
-
-footer .layar-dalam {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer .layar-dalam div {
-    width: 20%;
-}
-
-footer .layar-dalam h5 {
-    margin-top: 0px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-footer .layar-dalam .copyright {
-    width: 100%;
-    margin-top: 60px;
-    padding-top: 25px;
-    border-top: 1px solid #666;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-}
-
-/* footer#contact {
-    width: 1000px;
-    margin: auto;
-}
-
-footer#contact h3,p {
-    text-align: center;
-} */
-
-/**=============================================  CONFIG MEDIA & SCREEN  ======================*/
-
-@media screen and (max-width: 1080px) {
-    .layar-dalam {
-        width: 90%;
-    }
-
-    nav .menu ul {
-        display: none;
-        margin-top: 60px;
         position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    nav .menu ul li {
-        width: 100%;
-        border-bottom: 1px solid #ccc;
-        background-color: #fff;
-        line-height: 40px;
-    }
-
-    nav .menu ul li a {
-        color: #333;
-    }
+        height: 110px;
+      }
 
     .button-menu {
         display: flex;
@@ -1651,7 +583,6 @@ footer#contact h3,p {
 
     .blog .area {
         display: block;
-
     }
 
     .blog div.area div {
@@ -1687,7 +618,17 @@ footer#contact h3,p {
         width: 80px;
         vertical-align: top;
         float: left;
-        margin: 17px 10px 21px 0px;
+        margin: 9px 10px 21px 0px;
+    }
+
+    .button-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
     }
 
     .waviy {
@@ -1704,7 +645,8 @@ footer#contact h3,p {
 
     .button {
         flex: auto;
-        margin: 0px;
+        margin: 3px;
+        margin-bottom: 10px;
         padding: 0px 0px 0px 0px;
     }
 
@@ -1834,11 +776,21 @@ footer#contact h3,p {
 
 @media only screen and (min-width: 300px) {
 
+    .button-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+    }
+
     nav .logo img {
         width: 80px;
         vertical-align: top;
         float: left;
-        margin: 17px 10px 21px 0px;
+        margin: 9px 10px 21px 0px;
     }
 
     .waviy {
@@ -1982,155 +934,17 @@ footer#contact h3,p {
 
 }
 
+@media only screen and (min-width: 400px) {
+    
+}
+
+
+@media only screen and (min-width: 500px) {
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-    nav .logo img {
-        width: 80px;
-        vertical-align: top;
-        float: left;
-        margin: 17px 10px 21px 0px;
-    }
-
-    .waviy {
-        /* margin-bottom: 100px; */
-        height: 85px;
-    }
-    .waviy span {
-        font-size: 27.5px;
-    }
-
-    .full-screen .intro a {
-        font-size: 8.5px;
-    }
-
-    .button {
-        flex: auto;
-        margin: 0px;
-        padding: 0px 0px 0px 0px;
-    }
-
-    .intro h4 {
-        font-size: 12px;
-    }
-
-    .intro a {
-        font-size: 10px;
-        padding: 0px 5px 0px 5px;
-    }
-
-    section#aboutus {
-        width: 100%;
-    }
-
-    .support {
-        display: block;
-    }
-
-    .support div {
-        width: 100%;
-        padding-bottom: 30px;
-    }
-
-    section#aboutus p.ringkasan {
-        font-size: 16px;
-    }
-
-    section#aboutus .konten-isi p {
-        font-size: 12px;
-        text-align: justify;
-    }
-
-
-    section.quote .layar-dalam p {
-        display: inline;
-        background: url("Materials/Images/quotation.png") no-repeat;
-        /* background-position: left; */
-        background-size: 10px;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    section#team .layar-dalam h3 {
-        font-size: 23px;
-    }
-
-    section#team .layar-dalam p {
-        font-size: 16px;
-    }
-
-    .team {
-        /* display: flex; */
-        /* flex-direction: row; */
-        /* align-items: flex-end; */
-        display: block;
-        align-items: center;
-    }
-
-    .team h6 {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 15px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .team span, p {
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    .team img {
-        margin-top: 15px;
-        width: 50%;
-        box-shadow: 0px -10px 30px #ccc;
-        border-radius: 5px;
-    }
-
-    .team div {
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    #blog .layar-dalam p {
-        font-size: 12px;
-    }
-
-    .blog {
-        display: block;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .blog .area {
-        width: 100%;
-    }
-
-    #contact .copyright {
-        font-size: 15px;
-    }
-
-    #contact .layar-dalam p {
-        font-size: 14px;
-    }
-
-    footer .layar-dalam .copyright {
-        width: 100%;
-        margin-top: 85px;
-        padding-top: 25px;
-        border-top: 1px solid #666;
-        text-align: center;
-        font-size: 25px;
-        color: black;
-    }
 
 }
 
@@ -2140,14 +954,41 @@ footer#contact h3,p {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 990px) {
+
+    .waviy {
+        height: 150px;
+    }
+
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 80px;
+        margin-bottom: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+      }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .waviy span {
+        position: relative;
+        display: inline-block;
+        font-size: 60px;
+        color: #fff;
+        text-transform: uppercase;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s * var(--i))
+      }
+
 }
+
+
 
 /*!=============================   OPTIONAL (Responsif utk Support Section ) ================*/
 
