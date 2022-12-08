@@ -277,37 +277,43 @@ body {
 
 
 	@media screen and (max-width: 991px) {
-	.header .title {
-		text-align: center;
-	}
-	.header .title h1 {
-		font-size: 50px;
-		/* padding-top: 200px; */
-	}
-	.header .title h5 {
-		font-size: 13px;
-	}
-	.header .title a {
-		font-size: 70%;
-	}
-	#container {
-		position: relative;
-		width: auto;
-		max-width: 600px;
-		transition: 0.5s;
-	}
-	#container:hover {
-		height: 600px;
-	}
-	#container:hover img {
-		left: 50%;
-		height: 390px;
-	}
-	#container .box .content {
-		width: 100%;
-		left: 0;
-		padding: 40px;
-	}
+		.header .title {
+			text-align: center;
+		}
+		.header .title h1 {
+			font-size: 50px;
+			/* padding-top: 200px; */
+		}
+		.header .title h5 {
+			font-size: 13px;
+		}
+		.header .title a {
+			font-size: 70%;
+		}
+		#container .box .content {
+			padding: 30px;
+		}
+		#container img {
+			left: 75%;
+			transform: translateX(-50%);
+			height: 350px;
+			transition: 0.5s;
+		}
+		#container:hover img {
+			height: 390px;
+		}
+		
+		#container .box .content h2 {
+			font-size: 2em;
+		}
+		
+		#container .box .content p {
+			font-size: 0.65em;
+		}
+		
+		#container .box .content a {
+			font-size: 0.8em;
+		}
 }
 
 	@media screen and (max-width: 420px) {
