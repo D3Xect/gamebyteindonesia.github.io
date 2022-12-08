@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(-45deg, #d45832, #740831, #043d92, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+	height: 100%;
+
+	display: block;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+	margin: 2em;
+	overflow-x: hidden;
+}
+
+.header	{
+	padding-top: 50px;
+	color: white;
+}
+
+.header h1 {
+	font-size: 70px;
+}
+
+/* BAGIAN BACKGROUND GRADIENT */
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 40px 0;
+}
+
+#container .box {
+	position: relative;
+	width: 320px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px 30px;
+	transition: 0.5s;
+	margin: 100px;
+}
+
+#container .box::before {
+	content: "";
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	left: 40px;
+	width: 50%;
+	height: 100%;
+	background: white;
+	border-radius: 8px;
+	transform: skewX(15deg);
+	transition: 0.5s;
+}
+
+#container .box::after {
+	content: "";
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	left: 40px;
+	width: 50%;
+	height: 100%;
+	background: white;
+	border-radius: 8px;
+	transform: skewX(15deg);
+	transition: 0.5s;
+	filter: blur(30px);
+	transition: 0.5s;
+}
+
+#container .box:hover::before,
+#container .box:hover::after {
+	transform: skewX(0deg);
+	left: 20px;
+	width: calc(100% - 90px);
+}
+
+/* KONFIGURASI TIAP KARTU MELALUI NTH-CHILD (kode_kartu) */
+#container .box:nth-child(1):before,
+#container .box:nth-child(1):after {
+	/* background: linear-gradient(315deg,#0a0905,#ff0058); */
+	background: linear-gradient(315deg,#ff8000,#00ccff);
+}
+
+#container .box:nth-child(2):before,
+#container .box:nth-child(2):after {
+	/* background: linear-gradient(315deg,#0a0905,#ff0058); */
+	background: linear-gradient(315deg,#d400ff,#ffc800);
+}
+
+#container .box:nth-child(3):before,
+#container .box:nth-child(3):after {
+	/* background: linear-gradient(315deg,#0a0905,#ff0058); */
+	background: linear-gradient(315deg,#008cff,#ff0058);
+}
+
+/* EFEK */
+#container .box span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+	pointer-events: none;
+}
+
+/* EFEK BEFORE */
+#container .box span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blue(10px);
+	opacity: 0;
+	transition: 0.5s;
+	animation: animate 2s linear infinite;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+#container .box:hover span::before {
+	top: -50px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+}
+
+/* EFEK AFTER */
+#container .box span::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blue(10px);
+	opacity: 0;
+	transition: 0.5s;
+	animation: animate 2s linear infinite;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	animation-delay: -1s;
+}
+
+#container .box:hover span::after {
+	bottom: -50px;
+	right: 50px;
+	width: 100px;
+	height: 100px;
+	opacity: 1;
+}
+
+@keyframes animate {
+	0% , 100% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+#container .box .content {
+	position: relative;
+	left: 0;
+	padding: 20px 40px;
+	background-color: rgba(255,255,255,0.05);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	border-radius: 8px;
+	backdrop-filter: blue(10px);
+	transform: 0.5s;
+	color: white;
+
+	z-index: 1;
+	transition: 0.5s;
+	/* display: none; */
+}
+
+#container .box:hover .content {
+	left: -25px;
+}
+
+#container .box .content h2 {
+	font-size: 2em;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#container .box .content p {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+}
+
+#container .box .content a {
+	display: inline-block;
+	font-size: 1.1em;
+	color: #111;
+	background: white;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: 700;
+	margin-top: 5px;
+	padding: 0px 3px 0px 3px;
+}
+
+#container img {
+	position: absolute;
+	background-attachment: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 400px;
+	transition: 0.5s;
+}
+
+#container:hover img {
+	left: 80%;
+	height: 500px;
+}
+
+#btn-back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+}
+
+
+	@media screen and (max-width: 991px) {
+	.header .title {
+		text-align: center;
+	}
+	.header .title h1 {
+		font-size: 50px;
+		/* padding-top: 200px; */
+	}
+	.header .title h5 {
+		font-size: 13px;
+	}
+	.header .title a {
+		font-size: 70%;
+	}
+	#container {
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+	}
+	#container:hover {
+		height: 600px;
+	}
+	#container:hover img {
+		left: 50%;
+		height: 390px;
+	}
+	#container .box .content {
+		width: 100%;
+		left: 0;
+		padding: 40px;
+	}
+}
+
+	@media screen and (max-width: 420px) {
+		.header .title {
+			text-align: center;
+		}
+		.header .title h1 {
+			font-size: 50px;
+			/* padding-top: 200px; */
+		}
+		.header .title h5 {
+			font-size: 13px;
+		}
+		.header .title a {
+			font-size: 70%;
+		}
+		#container .box .content {
+			padding: 30px;
+		}
+		#container img {
+			left: 75%;
+			transform: translateX(-50%);
+			height: 350px;
+			transition: 0.5s;
+		}
+		#container:hover img {
+			height: 390px;
+		}
+		
+		#container .box .content h2 {
+			font-size: 2em;
+		}
+		
+		#container .box .content p {
+			font-size: 0.65em;
+		}
+		
+		#container .box .content a {
+			font-size: 0.8em;
+		}
+	}
